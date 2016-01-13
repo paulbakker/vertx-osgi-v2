@@ -1,0 +1,2321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository increment="1452691505000" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="io.netty.buffer"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="66fe5e48a4b5ce92303a85907fb645495cc30eae6cd82e50f6d900a7a6e6feb9"/>
+      <attribute name="url" value="io.netty.buffer/io.netty.buffer-4.0.33.jar"/>
+      <attribute name="size" type="Long" value="196881"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="io.netty.buffer"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="io.netty.buffer"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.buffer"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.buffer"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.util"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="io.netty.codec-http"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="3fca46ec35682d7317e447cbff4fc4733e9f0ec12825f731792bc63b2ecf07f0"/>
+      <attribute name="url" value="io.netty.codec-http/io.netty.codec-http-4.0.33.jar"/>
+      <attribute name="size" type="Long" value="443658"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.channel.embedded,io.netty.handler.codec,io.netty.handler.codec.compression,io.netty.handler.codec.http.cookie,io.netty.handler.stream,io.netty.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http.cookie"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http.cors"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.channel,io.netty.handler.codec.http"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http.multipart"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,io.netty.handler.codec.http,io.netty.handler.stream,io.netty.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http.websocketx"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,io.netty.handler.codec.http,io.netty.util,io.netty.util.internal.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.rtsp"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec.http"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.spdy"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,io.netty.handler.codec.http,io.netty.handler.ssl,io.netty.util"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.jcraft.jzlib)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.embedded)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.socket)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.base64)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.compression)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.ssl)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.stream)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="io.netty.codec"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="c17defaee8674c41b3c24ef8d9287fbb5f92b501a486cae9e1eec8ed5d3154e1"/>
+      <attribute name="url" value="io.netty.codec/io.netty.codec-4.0.33.jar"/>
+      <attribute name="size" type="Long" value="145779"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="io.netty.codec"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="io.netty.codec"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.base64"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.bytes"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.compression"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.marshalling"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,org.jboss.marshalling"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.protobuf"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="com.google.protobuf,io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.serialization"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.string"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.protobuf)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.jcraft.jzlib)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.jboss.marshalling)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="io.netty.common"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="a721974c6ce6a43715b924d80b0c41e125380e636b1392fc58acc3656ba1fa3f"/>
+      <attribute name="url" value="io.netty.common/io.netty.common-4.0.33.jar"/>
+      <attribute name="size" type="Long" value="441447"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="io.netty.common"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="io.netty.common"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.util"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.common"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.util.collection"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.common"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.util.concurrent"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.common"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.util.internal"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.common"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.util,io.netty.util.concurrent,javassist,javax.security.cert"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.chmv8"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.common"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.util.internal"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.logging"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.common"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.misc)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javassist)(version&gt;=3.19.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.cert)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.logging)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.log4j)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j.helpers)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="io.netty.handler"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="dfba9b4077210c01aacb8b445652df1c732dbc49aedd30380b8ed1c0c5bb93eb"/>
+      <attribute name="url" value="io.netty.handler/io.netty.handler-4.0.33.jar"/>
+      <attribute name="size" type="Long" value="272139"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="io.netty.handler"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="io.netty.handler"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.ipfilter"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.logging"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.util.internal.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.ssl"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,io.netty.util,io.netty.util.concurrent,javax.crypto,javax.net.ssl"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.ssl.util"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="javax.net.ssl"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.stream"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.timeout"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.handler.traffic"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.channel,io.netty.util.concurrent"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.security.util)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.security.x509)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.base64)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto.spec)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.auth.x500)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.cert)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.tomcat.jni)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.asn1.x500)(version&gt;=1.50.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.cert)(version&gt;=1.50.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.cert.jcajce)(version&gt;=1.50.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.jce.provider)(version&gt;=1.50.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.operator)(version&gt;=1.50.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.operator.jcajce)(version&gt;=1.50.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="io.netty.transport"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="51948c4c02882823be917bb244ae26e1f13c662c6d055c7df54868e2c372cb14"/>
+      <attribute name="url" value="io.netty.transport/io.netty.transport-4.0.33.jar"/>
+      <attribute name="size" type="Long" value="349164"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.bootstrap"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.channel,io.netty.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.channel"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.util,io.netty.util.concurrent"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.channel.embedded"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.channel.group"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.channel,io.netty.util.concurrent"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.channel.local"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.channel,io.netty.util.concurrent"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.channel.nio"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.util,io.netty.util.concurrent"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.channel.oio"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.channel.pool"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.bootstrap,io.netty.channel,io.netty.util.concurrent"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.channel.socket"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.channel.socket.nio"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.channel.nio,io.netty.channel.socket"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.netty.channel.socket.oio"/>
+      <attribute name="version" type="Version" value="4.0.33.Final"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" type="Version" value="4.0.33.Final"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.channel.oio,io.netty.channel.socket"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="io.vertx.core"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="94ffd9ab433c84182e1a28cf890b88f478a6ff4bc2f09e09f020f1a8cf8528e2"/>
+      <attribute name="url" value="io.vertx.core/io.vertx.core-3.2.0.jar"/>
+      <attribute name="size" type="Long" value="842556"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.netty.channel,io.vertx.codegen.annotations,io.vertx.core.datagram,io.vertx.core.dns,io.vertx.core.eventbus,io.vertx.core.file,io.vertx.core.http,io.vertx.core.impl,io.vertx.core.impl.launcher,io.vertx.core.json,io.vertx.core.metrics,io.vertx.core.net,io.vertx.core.shareddata,io.vertx.core.spi,io.vertx.core.spi.cluster,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.buffer"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.netty.buffer,io.vertx.codegen.annotations,io.vertx.core.json,io.vertx.core.shareddata.impl,io.vertx.core.spi"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.buffer.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.netty.buffer,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.spi"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.cli"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core.cli.converters,io.vertx.core.json"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.cli.annotations"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core.cli,io.vertx.core.cli.converters"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.cli.converters"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.cli.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core.cli"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.datagram"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.metrics,io.vertx.core.net,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.datagram.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.netty.channel.socket,io.vertx.core,io.vertx.core.buffer,io.vertx.core.datagram,io.vertx.core.impl,io.vertx.core.net,io.vertx.core.net.impl,io.vertx.core.spi.metrics,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.dns"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.dns.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.dns,io.vertx.core.impl"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.dns.impl.netty"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.channel.socket,io.netty.handler.codec,io.netty.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.dns.impl.netty.decoder"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.netty.handler.codec,io.vertx.core.dns.impl.netty,io.vertx.core.dns.impl.netty.decoder.record"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.dns.impl.netty.decoder.record"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.eventbus"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.metrics,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.eventbus.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.buffer,io.vertx.core.eventbus,io.vertx.core.impl,io.vertx.core.json,io.vertx.core.spi.metrics,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.eventbus.impl.clustered"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.buffer,io.vertx.core.eventbus,io.vertx.core.eventbus.impl,io.vertx.core.impl,io.vertx.core.net.impl,io.vertx.core.spi.cluster"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.eventbus.impl.codecs"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core.buffer,io.vertx.core.eventbus,io.vertx.core.json"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.file"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.file.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.buffer,io.vertx.core.file,io.vertx.core.impl,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.http"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.metrics,io.vertx.core.net,io.vertx.core.spi,io.vertx.core.streams,javax.net.ssl,javax.security.cert"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.http.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.netty.bootstrap,io.netty.buffer,io.netty.channel,io.netty.channel.socket.nio,io.netty.handler.codec.http,io.vertx.core,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.impl,io.vertx.core.net,io.vertx.core.net.impl,io.vertx.core.spi,io.vertx.core.spi.metrics,io.vertx.core.streams,javax.net.ssl,javax.security.cert"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.http.impl.cgbystrom"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.http.impl.ws"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.util,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.http.impl"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.netty.channel,io.vertx.core,io.vertx.core.datagram,io.vertx.core.dns,io.vertx.core.eventbus,io.vertx.core.file,io.vertx.core.http,io.vertx.core.http.impl,io.vertx.core.json,io.vertx.core.net,io.vertx.core.net.impl,io.vertx.core.shareddata,io.vertx.core.spi,io.vertx.core.spi.cluster,io.vertx.core.spi.metrics"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.impl.launcher"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.cli,io.vertx.core.spi.launcher"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.impl.launcher.commands"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.cli,io.vertx.core.cli.annotations,io.vertx.core.json,io.vertx.core.logging,io.vertx.core.metrics,io.vertx.core.spi.launcher"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.impl.verticle"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="javax.lang.model.element,javax.tools"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.json"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,io.vertx.codegen.annotations,io.vertx.core.buffer,io.vertx.core.shareddata.impl"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.logging"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core.spi.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.metrics"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core.json"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.metrics.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.datagram,io.vertx.core.eventbus,io.vertx.core.http,io.vertx.core.net,io.vertx.core.spi.metrics"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.net"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.json,io.vertx.core.metrics,io.vertx.core.streams,javax.net.ssl,javax.security.cert"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.net.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.ssl,io.netty.util.concurrent,io.vertx.core,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.impl,io.vertx.core.net,io.vertx.core.spi.metrics,io.vertx.core.streams,javax.net.ssl,javax.security.cert"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.parsetools"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.parsetools.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.buffer,io.vertx.core.parsetools"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.shareddata"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.shareddata.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.buffer,io.vertx.core.impl,io.vertx.core.shareddata,io.vertx.core.spi.cluster"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.spi"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.netty.buffer,io.vertx.core,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.metrics,io.vertx.core.spi.metrics,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.spi.cluster"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.shareddata"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.spi.launcher"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core.cli,io.vertx.core.cli.annotations,io.vertx.core.impl.launcher"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.spi.logging"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.spi.metrics"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.datagram,io.vertx.core.eventbus,io.vertx.core.http,io.vertx.core.metrics,io.vertx.core.net"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.streams"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.spi"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.streams.impl"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.2.0"/>
+      <directive name="uses" value="io.vertx.core.spi,io.vertx.core.streams"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j.spi)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.log4j)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.module)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.bootstrap)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.group)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.nio)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.socket)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.socket.nio)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http.multipart)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http.websocketx)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.ssl)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.stream)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.timeout)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.codegen.annotations)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.buffer)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.cli)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.cli.annotations)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.cli.converters)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.datagram)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.dns)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.eventbus)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.file)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.http)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.json)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.logging)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.net)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.parsetools)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.shareddata)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.spi.launcher)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.streams)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.lang.model.element)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.cert)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.tools)"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="io.vertx.core"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.3.0.SNAPSHOT"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="30472f0f9a580ed15e774964b848c866df985d07501c4a3616e84796b7fa6b0d"/>
+      <attribute name="url" value="io.vertx.core/io.vertx.core-3.3.0.jar"/>
+      <attribute name="size" type="Long" value="842886"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.netty.channel,io.vertx.codegen.annotations,io.vertx.core.datagram,io.vertx.core.dns,io.vertx.core.eventbus,io.vertx.core.file,io.vertx.core.http,io.vertx.core.impl,io.vertx.core.impl.launcher,io.vertx.core.json,io.vertx.core.metrics,io.vertx.core.net,io.vertx.core.shareddata,io.vertx.core.spi,io.vertx.core.spi.cluster,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.buffer"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.netty.buffer,io.vertx.codegen.annotations,io.vertx.core.json,io.vertx.core.shareddata.impl,io.vertx.core.spi"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.buffer.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.netty.buffer,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.spi"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.cli"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core.cli.converters,io.vertx.core.json"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.cli.annotations"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core.cli,io.vertx.core.cli.converters"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.cli.converters"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.cli.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core.cli"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.datagram"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.metrics,io.vertx.core.net,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.datagram.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.netty.channel.socket,io.vertx.core,io.vertx.core.buffer,io.vertx.core.datagram,io.vertx.core.impl,io.vertx.core.net,io.vertx.core.net.impl,io.vertx.core.spi.metrics,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.dns"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.dns.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.dns,io.vertx.core.impl"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.dns.impl.netty"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.channel.socket,io.netty.handler.codec,io.netty.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.dns.impl.netty.decoder"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.netty.handler.codec,io.vertx.core.dns.impl.netty,io.vertx.core.dns.impl.netty.decoder.record"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.dns.impl.netty.decoder.record"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.eventbus"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.metrics,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.eventbus.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.buffer,io.vertx.core.eventbus,io.vertx.core.impl,io.vertx.core.json,io.vertx.core.spi.metrics,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.eventbus.impl.clustered"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.buffer,io.vertx.core.eventbus,io.vertx.core.eventbus.impl,io.vertx.core.impl,io.vertx.core.net.impl,io.vertx.core.spi.cluster"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.eventbus.impl.codecs"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core.buffer,io.vertx.core.eventbus,io.vertx.core.json"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.file"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.file.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.buffer,io.vertx.core.file,io.vertx.core.impl,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.http"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.metrics,io.vertx.core.net,io.vertx.core.spi,io.vertx.core.streams,javax.net.ssl,javax.security.cert"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.http.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.netty.bootstrap,io.netty.buffer,io.netty.channel,io.netty.channel.socket.nio,io.netty.handler.codec.http,io.vertx.core,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.impl,io.vertx.core.net,io.vertx.core.net.impl,io.vertx.core.spi,io.vertx.core.spi.metrics,io.vertx.core.streams,javax.net.ssl,javax.security.cert"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.http.impl.cgbystrom"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.http.impl.ws"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.util,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.http.impl"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.netty.channel,io.vertx.core,io.vertx.core.datagram,io.vertx.core.dns,io.vertx.core.eventbus,io.vertx.core.file,io.vertx.core.http,io.vertx.core.http.impl,io.vertx.core.json,io.vertx.core.net,io.vertx.core.net.impl,io.vertx.core.shareddata,io.vertx.core.spi,io.vertx.core.spi.cluster,io.vertx.core.spi.metrics"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.impl.launcher"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.cli,io.vertx.core.spi.launcher"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.impl.launcher.commands"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.cli,io.vertx.core.cli.annotations,io.vertx.core.json,io.vertx.core.logging,io.vertx.core.metrics,io.vertx.core.spi.launcher"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.impl.verticle"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="javax.lang.model.element,javax.tools"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.json"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,io.vertx.codegen.annotations,io.vertx.core.buffer,io.vertx.core.shareddata.impl"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.logging"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core.spi.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.metrics"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core.json"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.metrics.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.datagram,io.vertx.core.eventbus,io.vertx.core.http,io.vertx.core.net,io.vertx.core.spi.metrics"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.net"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.json,io.vertx.core.metrics,io.vertx.core.streams,javax.net.ssl,javax.security.cert"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.net.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.ssl,io.netty.util.concurrent,io.vertx.core,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.impl,io.vertx.core.net,io.vertx.core.spi.metrics,io.vertx.core.streams,javax.net.ssl,javax.security.cert"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.parsetools"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.parsetools.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.buffer,io.vertx.core.parsetools"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.shareddata"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.shareddata.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.buffer,io.vertx.core.impl,io.vertx.core.shareddata,io.vertx.core.spi.cluster"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.spi"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.netty.buffer,io.vertx.core,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.metrics,io.vertx.core.spi.metrics,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.spi.cluster"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.shareddata"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.spi.launcher"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core.cli,io.vertx.core.cli.annotations,io.vertx.core.impl.launcher"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.spi.logging"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.spi.metrics"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.datagram,io.vertx.core.eventbus,io.vertx.core.http,io.vertx.core.metrics,io.vertx.core.net"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.streams"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.spi"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.streams.impl"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core.spi,io.vertx.core.streams"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j.spi)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.log4j)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.module)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.bootstrap)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.group)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.nio)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.socket)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.socket.nio)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http.multipart)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http.websocketx)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.ssl)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.stream)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.timeout)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.codegen.annotations)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.buffer)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.cli)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.cli.annotations)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.cli.converters)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.datagram)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.dns)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.eventbus)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.file)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.http)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.json)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.logging)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.net)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.parsetools)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.shareddata)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.spi.launcher)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.core.streams)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.lang.model.element)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.cert)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.tools)"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="rx-java"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.3.0.201601131324"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="c297d50c9ee02860fe84bb2c1c6df6ed881b2ff42c804b58d014696d45d74ee4"/>
+      <attribute name="url" value="rx-java/rx-java-3.3.0.jar"/>
+      <attribute name="size" type="Long" value="263036"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.netty.channel,io.vertx.codegen.annotations,io.vertx.core.datagram,io.vertx.core.dns,io.vertx.core.eventbus,io.vertx.core.file,io.vertx.core.http,io.vertx.core.metrics,io.vertx.core.net,io.vertx.core.shareddata,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.streams"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.shareddata"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.parsetools"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.net"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.metrics,io.vertx.core.streams,javax.net.ssl,javax.security.cert"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.metrics"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.codegen.annotations"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.http"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.metrics,io.vertx.core.net,io.vertx.core.streams,javax.net.ssl,javax.security.cert"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.file"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.eventbus"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.metrics,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.dns"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.datagram"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.metrics,io.vertx.core.net,io.vertx.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.cli"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.codegen.annotations"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.core.buffer"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.netty.buffer,io.vertx.codegen.annotations"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.lang.rxjava"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.rx.java,io.vertx.rxjava.core.streams"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rx.java"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.buffer,io.vertx.core.streams,rx,rx.functions,rx.plugins"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.datagram,io.vertx.core.http,io.vertx.core.net,io.vertx.rxjava.core.buffer,io.vertx.rxjava.core.datagram,io.vertx.rxjava.core.dns,io.vertx.rxjava.core.eventbus,io.vertx.rxjava.core.file,io.vertx.rxjava.core.http,io.vertx.rxjava.core.metrics,io.vertx.rxjava.core.net,io.vertx.rxjava.core.shareddata,io.vertx.rxjava.core.streams,rx,rx.plugins"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core.streams"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.streams,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core.shareddata"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.shareddata,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core.parsetools"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.parsetools,io.vertx.rxjava.core.buffer"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core.net"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.net,io.vertx.rxjava.core.buffer,io.vertx.rxjava.core.metrics,io.vertx.rxjava.core.streams,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core.metrics"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core.metrics"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core.http"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.http,io.vertx.rxjava.core,io.vertx.rxjava.core.buffer,io.vertx.rxjava.core.metrics,io.vertx.rxjava.core.net,io.vertx.rxjava.core.streams,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core.file"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.file,io.vertx.rxjava.core.buffer,io.vertx.rxjava.core.streams,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core.eventbus"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.eventbus,io.vertx.rxjava.core,io.vertx.rxjava.core.metrics,io.vertx.rxjava.core.streams,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core.dns"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.dns,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core.datagram"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.datagram,io.vertx.rxjava.core.buffer,io.vertx.rxjava.core.metrics,io.vertx.rxjava.core.net,io.vertx.rxjava.core.streams,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core.cli"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core.cli"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.core.buffer"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="rx-java"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131324"/>
+      <directive name="uses" value="io.vertx.core.buffer"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.codegen.annotations)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.shareddata)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.dns)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.module)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.bootstrap)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.group)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.nio)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.socket)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.socket.nio)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http.multipart)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http.websocketx)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.ssl)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.stream)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.timeout)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.lang.rxjava)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.datagram)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.dns)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.eventbus)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.file)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.http)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.metrics)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.net)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.shareddata)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.streams)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.lang.model.element)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.cert)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.tools)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.log4j)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j.spi)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=rx)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=rx.functions)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=rx.plugins)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.streams)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.parsetools)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.net)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.metrics)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.http)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.file)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.eventbus)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.datagram)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.cli)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.buffer)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="vertx-web"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.3.0.201601131244"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="fbba1eba454d49c83ab93c244d2dfdba3449112577ba48972c2617b91614b3f4"/>
+      <attribute name="url" value="vertx-web/vertx-web-3.3.0.jar"/>
+      <attribute name="size" type="Long" value="453556"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.web"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="io.netty.handler.codec.http.cookie,io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.json,io.vertx.ext.auth"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.web.templ"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.ext.web"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.web.sstore"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.ext.web"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.web.handler"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.http,io.vertx.ext.auth,io.vertx.ext.web,io.vertx.ext.web.sstore,io.vertx.ext.web.templ"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.web.handler.sockjs"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.net,io.vertx.core.streams,io.vertx.ext.auth,io.vertx.ext.web"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.web"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="groovy.lang,io.vertx.core,io.vertx.core.http,io.vertx.ext.web,io.vertx.groovy.core,io.vertx.groovy.core.buffer,io.vertx.groovy.core.http,io.vertx.groovy.ext.auth"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.web.templ"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="groovy.lang,io.vertx.core,io.vertx.core.buffer,io.vertx.groovy.core.buffer,io.vertx.groovy.ext.web"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.web.sstore"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="groovy.lang,io.vertx.core,io.vertx.ext.web,io.vertx.groovy.core,io.vertx.groovy.ext.web"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.web.handler"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="groovy.lang,io.vertx.core,io.vertx.core.http,io.vertx.ext.web,io.vertx.ext.web.handler,io.vertx.groovy.ext.auth,io.vertx.groovy.ext.web,io.vertx.groovy.ext.web.sstore,io.vertx.groovy.ext.web.templ"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.web.handler.sockjs"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="groovy.lang,io.vertx.core,io.vertx.core.buffer,io.vertx.ext.web.handler.sockjs,io.vertx.groovy.core,io.vertx.groovy.core.buffer,io.vertx.groovy.core.net,io.vertx.groovy.core.streams,io.vertx.groovy.ext.auth,io.vertx.groovy.ext.web"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.ext.web"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.http,io.vertx.core.json,io.vertx.ext.web,io.vertx.rxjava.core,io.vertx.rxjava.core.buffer,io.vertx.rxjava.core.http,io.vertx.rxjava.ext.auth"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.ext.web.templ"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.ext.web.templ,io.vertx.rxjava.core.buffer,io.vertx.rxjava.ext.web,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.ext.web.sstore"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.ext.web.sstore,io.vertx.rxjava.core,io.vertx.rxjava.ext.web,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.ext.web.handler"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.http,io.vertx.ext.web.handler,io.vertx.rxjava.ext.auth,io.vertx.rxjava.ext.web,io.vertx.rxjava.ext.web.sstore,io.vertx.rxjava.ext.web.templ"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.ext.web.handler.sockjs"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-web"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201601131244"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.json,io.vertx.ext.web.handler.sockjs,io.vertx.rxjava.core,io.vertx.rxjava.core.buffer,io.vertx.rxjava.core.net,io.vertx.rxjava.core.streams,io.vertx.rxjava.ext.auth,io.vertx.rxjava.ext.web,rx"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=groovy.lang)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.reflection)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.runtime)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.runtime.typehandling)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.core)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.core.buffer)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.core.http)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.core.net)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.core.streams)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.ext.auth)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.ext.web)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.ext.web.sstore)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.ext.web.templ)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.ext.auth)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.ext.auth.jwt)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.ext.auth.oauth2)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.lang.rxjava)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.lang.groovy)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.codegen.annotations)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rx.java)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.buffer)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.http)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.net)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core.streams)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.ext.auth)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=rx)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core.io)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core.json)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.module)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http.cookie)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.buffer)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.eventbus)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.file)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.http)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.impl)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.json)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.logging)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.net)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.shareddata)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.shareddata.impl)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.streams)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.ext.web.templ)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.ext.web)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.ext.web.sstore)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.ext.web.templ)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto.spec)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.cert)"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+</repository>

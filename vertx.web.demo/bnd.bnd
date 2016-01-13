@@ -1,0 +1,6 @@
+Private-Package: vertx.web.demo
+-buildpath: \
+	io.vertx.core,\
+	vertx-web,\
+	osgi.core;version=6.0
+Bundle-Activator: vertx.web.demo.Activator

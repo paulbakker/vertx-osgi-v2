@@ -1,0 +1,9 @@
+/.gradle/
+/reports/
+/generated/
+vertx.rx.web.demo/.settings
+vertx.rx.web.demo/generated
+vertx.web.demo/.settings
+vertx.web.demo/generated
+vertx.rx.web.demo/bin
+vertx.web.demo/bin
